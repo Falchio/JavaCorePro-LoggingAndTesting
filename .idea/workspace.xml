@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e985f6c1-d010-4951-ac4b-b0b9bfe9cac4" name="Default Changelist" comment="" />
+    <list default="true" id="e985f6c1-d010-4951-ac4b-b0b9bfe9cac4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/TestAndLog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/server/Server.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,10 +69,29 @@
       <recent name="D:\java\chat\client" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestClassForFirstMethod">
-    <configuration name="MethodsForTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MethodsForTest" />
-      <module name="Test" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.Main" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.Start" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,16 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClassForFirstMethod.massTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestClassForFirstMethod" />
-      <option name="METHOD_NAME" value="massTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestClassForSecondMethod.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,19 +123,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MethodsForTest" />
-      <item itemvalue="JUnit.TestClassForFirstMethod" />
-      <item itemvalue="JUnit.TestClassForFirstMethod.massTest" />
-      <item itemvalue="JUnit.TestClassForSecondMethod.test" />
       <item itemvalue="Application.tested" />
+      <item itemvalue="JUnit.TestClassForFirstMethod" />
+      <item itemvalue="JUnit.TestClassForSecondMethod.test" />
+      <item itemvalue="Application.Start" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Start" />
         <item itemvalue="JUnit.TestClassForFirstMethod" />
         <item itemvalue="JUnit.TestClassForSecondMethod.test" />
         <item itemvalue="Application.tested" />
-        <item itemvalue="JUnit.TestClassForFirstMethod.massTest" />
-        <item itemvalue="Application.MethodsForTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +197,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="179" key="#Start/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579028912538" />
+    <state x="717" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579722844041">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="717" y="324" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579722844041" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1579640511163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -195,26 +213,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579030309965" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1579423765537">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1579721288501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579423765537" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1579719146635">
+    <state x="740" y="276" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579721288501" />
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1579723381191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579719146635" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1579719146635">
+    <state width="1877" height="240" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579723381191" />
+    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1579723381190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579719146635" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1579719146635">
+    <state width="1877" height="240" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579723381190" />
+    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1579723381190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579719146635" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1579719146635">
+    <state width="1877" height="240" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579723381190" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1579723381191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579719146635" />
+    <state width="1877" height="240" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579723381191" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579719146636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -235,14 +253,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="264" key="IDE.errors.dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579634838935" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579423607649">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579719272809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579423607649" />
-    <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1579025203815">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579719272809" />
+    <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1579720880027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="591" y="65" width="737" height="909" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579025203815" />
+    <state x="591" y="65" width="737" height="909" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579720880027" />
     <state x="342" y="141" key="new project wizard" timestamp="1579633317841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
