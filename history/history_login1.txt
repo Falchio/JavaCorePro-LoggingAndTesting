@@ -1,0 +1,14 @@
+[ nick1 ] private [ zzzz ] : sad sdf 
+nick1 : asdf sadf
+nick1 : asdf sadf
+[ nick1 ] private [ zzzz ] : asdadsfasd 
+zzzz : asdfasdfasdfsadfsad
+[ zzzz ] private [ nick1 ] : aaaaaaaaaa
+nick1 : mmmmm
+nick1 : mmmm
+zzzz : mmmm
+zzzz : mmm
+[ zzzz ] private [ nick1 ] : bbbbb
+[ nick1 ] private [ zzzz ] : bbbbbbb
+[ nick1 ] private [ nick1 ] : sdfgsdfgdsfgds fg sdf
+[ nick1 ] private [ nick1 ] : sdfgsdfgdsfgds fg sdf
