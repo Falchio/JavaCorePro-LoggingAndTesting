@@ -1,0 +1,6 @@
+янв 22, 2020 11:27:39 PM server.Server <init>
+INFO: Сервер запущен
+янв 22, 2020 11:27:50 PM server.Server subscribe
+INFO: Подключился клиент с именем: bbb
+янв 22, 2020 11:28:01 PM server.Server unsubscribe
+INFO: Отключился клиент с именем:  bbb

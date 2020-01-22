@@ -6,10 +6,15 @@ import java.net.Socket;
 import java.util.Vector;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.logging.*;
+
+import static java.util.logging.Logger.*;
 
 public class Server {
     private Vector<ClientHandler> clients;
     private AuthService authService;
+    private static final Logger logger = getLogger(Server.class.getName());
+    private Handler fileHandler = null;
 
     public AuthService getAuthService() {
         return authService;
@@ -17,8 +22,17 @@ public class Server {
 
     public Server() {
         clients = new Vector<>();
+        try {
+            fileHandler = new FileHandler("server/src/main/java/server/log.log", 1024,1,true );
+            fileHandler.setFormatter(new SimpleFormatter());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        logger.addHandler(fileHandler);
+
 //        authService = new SimpleAuthService();
         if (!SQLHandler.connect()) {
+            logger.log(Level.SEVERE,"Не удалось подключиться к БД");
             throw new RuntimeException("Не удалось подключиться к БД");
         }
         authService = new DBAuthServise();
@@ -29,12 +43,11 @@ public class Server {
         ExecutorService cashedTreadPool = null;
         try {
             server = new ServerSocket(8189);
-            System.out.println("Сервер запущен");
+            logger.log(Level.INFO, "Сервер запущен");
             cashedTreadPool = Executors.newCachedThreadPool();
 
             while (true) {
                 socket = server.accept();
-                System.out.println("Клиент подключился");
                 cashedTreadPool.execute(new ClientHandler(this, socket));
             }
 
@@ -45,6 +58,7 @@ public class Server {
             SQLHandler.disconnect();
             try {
                 server.close();
+                logger.log(Level.WARNING,"Сервер прекратил работу");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -73,10 +87,12 @@ public class Server {
 
     public void subscribe(ClientHandler clientHandler) {
         clients.add(clientHandler);
+        logger.log(Level.INFO,"Подключился клиент с именем: " + clientHandler.getNick());
         broadcastClientlist();
     }
 
     public void unsubscribe(ClientHandler clientHandler) {
+        logger.log(Level.INFO,"Отключился клиент с именем:  " + clientHandler.getNick());
         clients.remove(clientHandler);
         broadcastClientlist();
     }
