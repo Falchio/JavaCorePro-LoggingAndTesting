@@ -14,7 +14,7 @@ public class Server {
     private Vector<ClientHandler> clients;
     private AuthService authService;
     private static final Logger logger = getLogger(Server.class.getName());
-    Handler fileHandler = null;
+    private Handler fileHandler = null;
 
     public AuthService getAuthService() {
         return authService;
@@ -48,7 +48,6 @@ public class Server {
 
             while (true) {
                 socket = server.accept();
-                logger.log(Level.INFO,"Клиент подключился");
                 cashedTreadPool.execute(new ClientHandler(this, socket));
             }
 
@@ -88,10 +87,12 @@ public class Server {
 
     public void subscribe(ClientHandler clientHandler) {
         clients.add(clientHandler);
+        logger.log(Level.INFO,"Подключился клиент с именем: " + clientHandler.getNick());
         broadcastClientlist();
     }
 
     public void unsubscribe(ClientHandler clientHandler) {
+        logger.log(Level.INFO,"Отключился клиент с именем:  " + clientHandler.getNick());
         clients.remove(clientHandler);
         broadcastClientlist();
     }
